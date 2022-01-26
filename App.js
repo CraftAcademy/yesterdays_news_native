@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
 const App = () => {
   return (
     <View style={styles.container}>
-      <Text>Placeholder</Text>
+      <Text testID="header">Hello world</Text>
     </View>
   );
 };
