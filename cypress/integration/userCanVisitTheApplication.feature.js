@@ -1,9 +1,47 @@
-describe('A user can see the main view of the application', () => {
-  before(() => {
-    cy.visit('/');
-  });
+describe("A user ", () => {
+  describe("can see the main view of the application", () => {
+    beforeEach(() => {
+      cy.intercept("GET", "/api/articles", { fixture: "articleIndex.json" }).as(
+        "getArticles"
+      );
+      cy.visit("/");
+    });
 
-  it('is expected to display "Hello world" message', () => {
-    cy.get('[data-testid=header]').should('contain.text', 'Hello world');
+    it("is expected to make a GET request to the API", () => {
+      cy.wait("@getArticles").its("request.method").should("eq", "GET");
+    });
+
+    it("is expected to see article title", () => {
+      cy.get("[data-testid=article-collection]")
+        .children()
+        .first()
+        .within(() => {
+          cy.get("[data-testid=article-title]").should(
+            "contain",
+            "The Doors of Perception"
+          );
+        });
+    });
+  });
+  describe("can see an info message if no articles are available", () => {
+    before(() => {
+      cy.intercept("GET", "/api/articles", {
+        body: { articles: [] },
+        statusCode: 401,
+      }).as("emptyResponse");
+
+      cy.visit("/");
+    });
+
+    it("is expected to make a GET request to the API", () => {
+      cy.wait("@emptyResponse").its("request.method").should("eq", "GET");
+    });
+
+    it("is expected to display info message", () => {
+      cy.get("[data-testid=flash-message]").should(
+        "contain.text",
+        "We don't have articles available at the moment, please try again later."
+      );
+    });
   });
 });
