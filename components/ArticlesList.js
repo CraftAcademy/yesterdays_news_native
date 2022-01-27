@@ -44,9 +44,8 @@ const ArticlesList = ({ navigation }) => {
         "https://yesterdays-news-api.herokuapp.com/api/articles"
       );
       setArticles(response.data.articles);
-    } catch (error) {
       debugger;
-    }
+    } catch (error) {}
   };
 
   useEffect(() => {
@@ -54,25 +53,23 @@ const ArticlesList = ({ navigation }) => {
   }, []);
 
   return (
-    <View>
-      <View style={styles.container}>
-        <FlatList
-          data={articles}
-          renderItem={({ item }) => (
-            <TouchableOpacity testID="articles" style={styles.card}>
-              <Text
-                testId="article"
-                style={styles.item}
-                keyExtractor={(item) => item.id}
-              >
-                {item.title}
-              </Text>
-              <Text style={styles.teaser}>{item.teaser}</Text>
-              <Text style={styles.published}>{item.published}</Text>
-            </TouchableOpacity>
-          )}
-        />
-      </View>
+    <View testID="article-collection" style={styles.container}>
+      <FlatList
+        data={articles}
+        renderItem={({ item }) => (
+          <View style={styles.card}>
+            <Text
+              testID="article-title"
+              style={styles.item}
+              keyExtractor={(item) => item.id}
+            >
+              {item.title}
+            </Text>
+            <Text style={styles.teaser}>{item.teaser}</Text>
+            <Text style={styles.published}>{item.published}</Text>
+          </View>
+        )}
+      />
     </View>
   );
 };
