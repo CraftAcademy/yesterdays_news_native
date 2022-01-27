@@ -8,7 +8,11 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="home" component={MainView} />
+        <Stack.Screen
+          name="home"
+          component={MainView}
+          options={{ title: "Yesterdays News" }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
