@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
 
 const ArticlesList = ({ navigation }) => {
   const [articles, setArticles] = useState([]);
+  const [message, setMessage] = useState();
 
   const fetchArticles = async () => {
     try {
@@ -38,7 +39,9 @@ const ArticlesList = ({ navigation }) => {
       );
       setArticles(response.data.articles);
     } catch (error) {
-      return error;
+      setMessage(
+        "We don't have articles available at the moment, please try again later."
+      );
     }
   };
 
@@ -47,24 +50,27 @@ const ArticlesList = ({ navigation }) => {
   }, []);
 
   return (
-    <View testID="article-collection" style={styles.container}>
-      <FlatList
-        data={articles}
-        renderItem={({ item }) => (
-          <View style={styles.card}>
-            <Text
-              testID="article-title"
-              style={styles.item}
-              keyExtractor={(item) => item.id}
-            >
-              {item.title}
-            </Text>
-            <Text style={styles.teaser}>{item.teaser}</Text>
-            <Text style={styles.published}>{item.published}</Text>
-          </View>
-        )}
-      />
-    </View>
+    <>
+      <View testID="flash-message">{message}</View>
+      <View testID="article-collection" style={styles.container}>
+        <FlatList
+          data={articles}
+          renderItem={({ item }) => (
+            <View style={styles.card}>
+              <Text
+                testID="article-title"
+                style={styles.item}
+                keyExtractor={(item) => item.id}
+              >
+                {item.title}
+              </Text>
+              <Text style={styles.teaser}>{item.teaser}</Text>
+              <Text style={styles.published}>{item.published}</Text>
+            </View>
+          )}
+        />
+      </View>
+    </>
   );
 };
 
