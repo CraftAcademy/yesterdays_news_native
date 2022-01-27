@@ -1,13 +1,6 @@
-import {
-  StyleSheet,
-  FlatList,
-  Text,
-  View,
-  TouchableOpacity,
-} from "react-native";
+import { StyleSheet, FlatList, Text, View } from "react-native";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { shouldUseActivityState } from "react-native-screens";
 
 const styles = StyleSheet.create({
   container: {
@@ -44,8 +37,9 @@ const ArticlesList = ({ navigation }) => {
         "https://yesterdays-news-api.herokuapp.com/api/articles"
       );
       setArticles(response.data.articles);
-      debugger;
-    } catch (error) {}
+    } catch (error) {
+      return error;
+    }
   };
 
   useEffect(() => {
