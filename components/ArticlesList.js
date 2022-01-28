@@ -1,4 +1,10 @@
-import { StyleSheet, FlatList, Text, View } from "react-native";
+import {
+  StyleSheet,
+  FlatList,
+  Text,
+  View,
+  TouchableOpacity,
+} from "react-native";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -56,7 +62,15 @@ const ArticlesList = ({ navigation }) => {
         <FlatList
           data={articles}
           renderItem={({ item }) => (
-            <View style={styles.card}>
+            <TouchableOpacity
+              style={styles.card}
+              onPress={() => {
+                navigation.navigate("article", {
+                  id: item.id,
+                  title: item.title,
+                });
+              }}
+            >
               <Text
                 testID="article-title"
                 style={styles.item}
@@ -66,7 +80,7 @@ const ArticlesList = ({ navigation }) => {
               </Text>
               <Text style={styles.teaser}>{item.teaser}</Text>
               <Text style={styles.published}>{item.published}</Text>
-            </View>
+            </TouchableOpacity>
           )}
         />
       </View>
