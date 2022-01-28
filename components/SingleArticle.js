@@ -34,11 +34,14 @@ const SingleArticle = ({ navigation, route }) => {
 
   return (
     <View>
-      <Text style={styles.header}>{article.title}</Text>
-      <View>
+      <View testID="article-title">
+        <Text style={styles.header}>{article.title}</Text>
+      </View>
+
+      <View testID="article-body">
         <Text style={styles.body}>{article.body}</Text>
       </View>
-      <View>
+      <View testID="article-created">
         <Text style={styles.published}>{article.published}</Text>
       </View>
     </View>
