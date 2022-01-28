@@ -24,7 +24,6 @@ const SingleArticle = ({ navigation, route }) => {
     const { data } = await axios.get(
       `https://yesterdays-news-api.herokuapp.com/api/articles/${route.params.id}`
     );
-
     setArticle(data.article);
   };
 
