@@ -1,9 +1,10 @@
 describe("A user ", () => {
   describe("can see the main view of the application", () => {
-    beforeEach(() => {
+    before(() => {
       cy.intercept("GET", "/api/articles", { fixture: "articleIndex.json" }).as(
         "getArticles"
       );
+      cy.viewport('samsung-s10');
       cy.visit("/");
     });
 

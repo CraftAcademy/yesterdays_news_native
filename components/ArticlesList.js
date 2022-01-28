@@ -1,37 +1,43 @@
 import {
   StyleSheet,
   FlatList,
+  Image,
   Text,
   View,
   TouchableOpacity,
+  Dimensions
 } from "react-native";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingTop: 22,
-  },
-  item: {
-    padding: 10,
-    fontSize: 30,
-    height: 44,
-  },
-  teaser: {
-    padding: 10,
-    fontSize: 20,
-  },
-  published: {
-    padding: 10,
-    fontSize: 15,
-  },
   card: {
-    border: "solid #dbdbdb",
-    margin: 5,
+    width: Dimensions.get("window").width,
     borderRadius: 10,
-    backgroundColor: "#e8e8e8",
+    paddingLeft: 5,
+    paddingRight: 8,
+    bottom: 8,
+    backgroundColor: "rgba(0,0,0,0.3)"
   },
+  image: {
+    height: 250,
+    width: Dimensions.get("window").width - 10
+  },
+  title: {
+    marginTop: -60,
+    color: "white",
+    fontSize: 26
+  },
+  subtitle: {
+    paddingTop: 12,
+    color: "white",
+    fontSize: 16
+  },
+  small: {
+    paddingBottom: 10,
+    color: "white",
+    fontSize: 12
+  }
 });
 
 const ArticlesList = ({ navigation }) => {
@@ -61,25 +67,32 @@ const ArticlesList = ({ navigation }) => {
       <View testID="article-collection" style={styles.container}>
         <FlatList
           data={articles}
-          renderItem={({ item }) => (
+          renderItem={({ item, index }) => (
             <TouchableOpacity
+              testID={`article-${index}`}
               style={styles.card}
               onPress={() => {
                 navigation.navigate("article", {
                   id: item.id,
-                  title: item.title,
+                  title: item.title
                 });
               }}
             >
-              <Text
-                testID="article-title"
-                style={styles.item}
-                keyExtractor={(item) => item.id}
-              >
-                {item.title}
-              </Text>
-              <Text style={styles.teaser}>{item.teaser}</Text>
-              <Text style={styles.published}>{item.published}</Text>
+              <Image
+                source="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                style={styles.image}
+              />
+              <View style={styles.card}>
+                <Text
+                  testID="article-title"
+                  style={styles.title}
+                  keyExtractor={(item) => item.id}
+                >
+                  {item.title}
+                </Text>
+                <Text style={styles.subtitle}>{item.teaser}</Text>
+                <Text style={styles.small}>{item.published}</Text>
+              </View>
             </TouchableOpacity>
           )}
         />

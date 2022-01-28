@@ -9,7 +9,7 @@ describe("Visitor can see a single article", () => {
 
     cy.visit("/");
     cy.wait("@getArticles");
-    cy.get("[data-testid=article-collection]").children().first().click();
+    cy.get("[data-testid=article-0]").click();
   });
 
   it("is expected to make a GET request to the API", () => {
