@@ -33,17 +33,29 @@ const styles = StyleSheet.create({
     width: Dimensions.get("window").width - 10
   },
   title: {
+    width: Dimensions.get("window").width - 10,
+    backgroundColor: "rgba(0,0,0,0.5)",
+    marginLeft: -5,
     marginTop: -60,
+    paddingLeft: 5,
+    paddingRight: 5,
     color: "white",
     fontSize: 26
   },
   subtitle: {
+    width: Dimensions.get("window").width - 10,
+    paddingLeft: 5,
+    borderBottomEndRadius: 7,
+    borderBottomLeftRadius: 7,
+    backgroundColor: "rgba(0,0,0,0.5)",
+    marginLeft: -5,
     paddingTop: 12,
     color: "white",
     fontSize: 16
   },
   small: {
-    paddingBottom: 10,
+    paddingTop: 5,
+    paddingBottom: 5,
     color: "white",
     fontSize: 12
   }
