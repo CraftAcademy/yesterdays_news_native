@@ -13,7 +13,6 @@ import axios from "axios";
 const styles = StyleSheet.create({
   card: {
     width: Dimensions.get("window").width,
-    borderRadius: 10,
     paddingLeft: 5,
     paddingRight: 8,
     bottom: 8,
