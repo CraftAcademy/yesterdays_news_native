@@ -12,13 +12,22 @@ import axios from "axios";
 
 const styles = StyleSheet.create({
   card: {
-    width: Dimensions.get("window").width,
+    paddingLeft: 5,
+    paddingRight: 8,
+    bottom: 8,
+    backgroundColor: "rgba(0,0,0,0.3)"
+  },
+  subCard: {
+    width: Dimensions.get("window").width - 10,
+    borderBottomEndRadius: 10,
+    borderBottomLeftRadius: 10,
     paddingLeft: 5,
     paddingRight: 8,
     bottom: 8,
     backgroundColor: "rgba(0,0,0,0.3)"
   },
   image: {
+    borderRadius: 10,
     height: 250,
     width: Dimensions.get("window").width - 10
   },
@@ -81,7 +90,7 @@ const ArticlesList = ({ navigation }) => {
                 source="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
                 style={styles.image}
               />
-              <View style={styles.card}>
+              <View style={styles.subCard}>
                 <Text
                   testID="article-title"
                   style={styles.title}

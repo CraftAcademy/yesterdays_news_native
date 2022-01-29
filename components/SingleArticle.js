@@ -12,7 +12,11 @@ const styles = StyleSheet.create({
     fontSize: 20
   },
   published: {
-    fontSize: 15
+    fontSize: 15,
+    marginBottom: -17
+  },
+  author: {
+    textAlign: 'right'
   }
 });
 const SingleArticle = ({ route }) => {
@@ -46,6 +50,9 @@ const SingleArticle = ({ route }) => {
         </Text>
         <Text testID="article-created" style={styles.published}>
           {article.published}
+        </Text>
+        <Text testID="article-author" style={styles.author}>
+          {article.author}
         </Text>
       </Card>
     </View>
