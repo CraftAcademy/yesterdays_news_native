@@ -45,6 +45,7 @@ const styles = StyleSheet.create({
   subtitle: {
     width: Dimensions.get("window").width - 10,
     paddingLeft: 5,
+    paddingBottom: 5,
     borderBottomEndRadius: 7,
     borderBottomLeftRadius: 7,
     backgroundColor: "rgba(0,0,0,0.5)",
@@ -54,6 +55,14 @@ const styles = StyleSheet.create({
     fontSize: 16
   },
   small: {
+    paddingTop: 5,
+    paddingBottom: 5,
+    color: "white",
+    fontSize: 12
+  },
+  author: {
+    textAlign: 'right',
+    marginTop: -24,
     paddingTop: 5,
     paddingBottom: 5,
     color: "white",
@@ -114,6 +123,7 @@ const ArticlesList = ({ navigation }) => {
                 </Text>
                 <Text style={styles.subtitle}>{item.teaser}</Text>
                 <Text style={styles.small}>{item.published}</Text>
+                <Text style={styles.author}>{item.author}</Text>
               </View>
             </TouchableOpacity>
           )}
