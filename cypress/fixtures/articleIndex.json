@@ -1,117 +1,204 @@
 {
-    "articles": [
-      {
-        "id": 16,
-        "title": "The Doors of Perception",
-        "teaser": "I didn't work hard to make Ruby perfect for everyone, becaus...",
-        "published": "2022-01-23T12:02:56.183Z",
-        "category": "News"
-      },
-      {
-        "id": 15,
-        "title": "Arms and the Man",
-        "teaser": "Actually, I didn't make the claim that Ruby follows the prin...",
-        "published": "2022-01-23T12:02:56.179Z",
-        "category": "News"
-      },
-      {
-        "id": 14,
-        "title": "A Time of Gifts",
-        "teaser": "Smart people underestimate the ordinarity of ordinary people...",
-        "published": "2022-01-23T12:02:56.175Z",
-        "category": "News"
-      },
-      {
-        "id": 13,
-        "title": "When the Green Woods Laugh",
-        "teaser": "Smart people underestimate the ordinarity of ordinary people...",
-        "published": "2022-01-23T12:02:56.171Z",
-        "category": "News"
-      },
-      {
-        "id": 12,
-        "title": "I Will Fear No Evil",
-        "teaser": "Language designers want to design the perfect language. They...",
-        "published": "2022-01-23T12:02:56.166Z",
-        "category": "Economy"
-      },
-      {
-        "id": 11,
-        "title": "Blood's a Rover",
-        "teaser": "The orthogonal features, when combined, can explode into com...",
-        "published": "2022-01-23T12:02:56.160Z",
-        "category": "Economy"
-      },
-      {
-        "id": 10,
-        "title": "The Man Within",
-        "teaser": "I believe consistency and orthogonality are tools of design,...",
-        "published": "2022-01-23T12:02:56.156Z",
-        "category": "Economy"
-      },
-      {
-        "id": 9,
-        "title": "Bury My Heart at Wounded Knee",
-        "teaser": "Because of the Turing completeness theory, everything one Tu...",
-        "published": "2022-01-23T12:02:56.143Z",
-        "category": "Economy"
-      },
-      {
-        "id": 8,
-        "title": "Quo Vadis",
-        "teaser": "Man is driven to create; I know I really love to create thin...",
-        "published": "2022-01-23T12:02:56.139Z",
-        "category": "Politics"
-      },
-      {
-        "id": 7,
-        "title": "The Moving Toyshop",
-        "teaser": "The orthogonal features, when combined, can explode into com...",
-        "published": "2022-01-23T12:02:56.135Z",
-        "category": "Politics"
-      },
-      {
-        "id": 6,
-        "title": "Infinite Jest",
-        "teaser": "Imagine you are writing an email. You are in front of the co...",
-        "published": "2022-01-23T12:02:56.132Z",
-        "category": "Politics"
-      },
-      {
-        "id": 5,
-        "title": "The Lathe of Heaven",
-        "teaser": "The orthogonal features, when combined, can explode into com...",
-        "published": "2022-01-23T12:02:56.129Z",
-        "category": "Politics"
-      },
-      {
-        "id": 4,
-        "title": "A Many-Splendoured Thing",
-        "teaser": "I didn't work hard to make Ruby perfect for everyone, becaus...",
-        "published": "2022-01-23T12:02:56.125Z",
-        "category": "Sports"
-      },
-      {
-        "id": 3,
-        "title": "The Doors of Perception",
-        "teaser": "Everyone has an individual background. Someone may come from...",
-        "published": "2022-01-23T12:02:56.122Z",
-        "category": "Sports"
-      },
-      {
-        "id": 2,
-        "title": "The Millstone",
-        "teaser": "Ruby inherited the Perl philosophy of having more than one w...",
-        "published": "2022-01-23T12:02:56.119Z",
-        "category": "Sports"
-      },
-      {
-        "id": 1,
-        "title": "The Grapes of Wrath",
-        "teaser": "Often people, especially computer engineers, focus on the ma...",
-        "published": "2022-01-23T12:02:56.115Z",
-        "category": "Sports"
-      }
-    ]
-  }
-  
+  "articles": [
+    {
+      "id": 841,
+      "title": "O Jerusalem!",
+      "teaser": "Because of the Turing completeness theory, everything one Tu...",
+      "published": "January 29, 2022 16:56",
+      "category": "Sports",
+      "user": "aracelis.brakus@carter.net",
+      "author": "Arline Cassin",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+      "id": 840,
+      "title": "The Widening Gyre",
+      "teaser": "Language designers want to design the perfect language. They...",
+      "published": "January 29, 2022 16:56",
+      "category": "Politics",
+      "user": "aracelis.brakus@carter.net",
+      "author": "Arline Cassin",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+      "id": 839,
+      "title": "Recalled to Life",
+      "teaser": "The orthogonal features, when combined, can explode into com...",
+      "published": "January 29, 2022 16:56",
+      "category": "Economy",
+      "user": "elwood.schmitt@rippin-welch.com",
+      "author": "Vicente Shields Jr.",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+      "id": 838,
+      "title": "Postern of Fate",
+      "teaser": "I believe consistency and orthogonality are tools of design,...",
+      "published": "January 29, 2022 16:56",
+      "category": "Politics",
+      "user": "aracelis.brakus@carter.net",
+      "author": "Arline Cassin",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+      "id": 837,
+      "title": "The Glory and the Dream",
+      "teaser": "Man is driven to create; I know I really love to create thin...",
+      "published": "January 29, 2022 16:56",
+      "category": "News",
+      "user": "aracelis.brakus@carter.net",
+      "author": "Arline Cassin",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+      "id": 836,
+      "title": "An Instant In The Wind",
+      "teaser": "Because of the Turing completeness theory, everything one Tu...",
+      "published": "January 29, 2022 16:56",
+      "category": "Sports",
+      "user": "elwood.schmitt@rippin-welch.com",
+      "author": "Vicente Shields Jr.",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+      "id": 835,
+      "title": "Blue Remembered Earth",
+      "teaser": "You want to enjoy life, don't you? If you get your job done ...",
+      "published": "January 29, 2022 16:56",
+      "category": "News",
+      "user": "aracelis.brakus@carter.net",
+      "author": "Arline Cassin",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+      "id": 834,
+      "title": "The Torment of Others",
+      "teaser": "Ruby inherited the Perl philosophy of having more than one w...",
+      "published": "January 29, 2022 16:56",
+      "category": "Politics",
+      "user": "normand@dare.io",
+      "author": "Monty Collier",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+      "id": 833,
+      "title": "The Moon by Night",
+      "teaser": "The orthogonal features, when combined, can explode into com...",
+      "published": "January 29, 2022 16:56",
+      "category": "News",
+      "user": "aracelis.brakus@carter.net",
+      "author": "Arline Cassin",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+      "id": 832,
+      "title": "A Catskill Eagle",
+      "teaser": "Smart people underestimate the ordinarity of ordinary people...",
+      "published": "January 29, 2022 16:56",
+      "category": "Politics",
+      "user": "aracelis.brakus@carter.net",
+      "author": "Arline Cassin",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+      "id": 831,
+      "title": "Dance Dance Dance",
+      "teaser": "Man is driven to create; I know I really love to create thin...",
+      "published": "January 29, 2022 16:56",
+      "category": "News",
+      "user": "normand@dare.io",
+      "author": "Monty Collier",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+      "id": 830,
+      "title": "The Moving Finger",
+      "teaser": "Imagine you are writing an email. You are in front of the co...",
+      "published": "January 29, 2022 16:56",
+      "category": "Economy",
+      "user": "aracelis.brakus@carter.net",
+      "author": "Arline Cassin",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+      "id": 829,
+      "title": "Infinite Jest",
+      "teaser": "I believe that the purpose of life is, at least in part, to ...",
+      "published": "January 29, 2022 16:56",
+      "category": "Sports",
+      "user": "aracelis.brakus@carter.net",
+      "author": "Arline Cassin",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+      "id": 828,
+      "title": "No Country for Old Men",
+      "teaser": "I believe that the purpose of life is, at least in part, to ...",
+      "published": "January 29, 2022 16:56",
+      "category": "News",
+      "user": "normand@dare.io",
+      "author": "Monty Collier",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+      "id": 827,
+      "title": "A Swiftly Tilting Planet",
+      "teaser": "Actually, I didn't make the claim that Ruby follows the prin...",
+      "published": "January 29, 2022 16:56",
+      "category": "Sports",
+      "user": "toccara.strosin@sporer-dickinson.org",
+      "author": "Zackary Bogisich",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+      "id": 826,
+      "title": "Pale Kings and Princes",
+      "teaser": "Most of the tasks we do are for humans. For example, a tax c...",
+      "published": "January 29, 2022 16:56",
+      "category": "Economy",
+      "user": "aracelis.brakus@carter.net",
+      "author": "Arline Cassin",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+      "id": 825,
+      "title": "A Monstrous Regiment of Women",
+      "teaser": "The orthogonal features, when combined, can explode into com...",
+      "published": "January 29, 2022 16:56",
+      "category": "Economy",
+      "user": "toccara.strosin@sporer-dickinson.org",
+      "author": "Zackary Bogisich",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+      "id": 824,
+      "title": "Look to Windward",
+      "teaser": "Most programs are not write-once. They are reworked and rewr...",
+      "published": "January 29, 2022 16:56",
+      "category": "Politics",
+      "user": "aracelis.brakus@carter.net",
+      "author": "Arline Cassin",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+      "id": 823,
+      "title": "Things Fall Apart",
+      "teaser": "Most programs are not write-once. They are reworked and rewr...",
+      "published": "January 29, 2022 16:56",
+      "category": "Economy",
+      "user": "aracelis.brakus@carter.net",
+      "author": "Arline Cassin",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+      "id": 822,
+      "title": "The Daffodil Sky",
+      "teaser": "People are different. People choose different criteria. But ...",
+      "published": "January 29, 2022 16:56",
+      "category": "Politics",
+      "user": "toccara.strosin@sporer-dickinson.org",
+      "author": "Zackary Bogisich",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    }
+  ]
+}
