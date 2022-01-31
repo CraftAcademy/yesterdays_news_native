@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     width: Dimensions.get("window").width - 10,
     paddingLeft: 5,
     paddingBottom: 5,
-    borderBottomEndRadius: 7,
+    borderBottomRightRadius: 7,
     borderBottomLeftRadius: 7,
     backgroundColor: "rgba(0,0,0,0.5)",
     marginLeft: -5,
@@ -109,8 +109,7 @@ const ArticlesList = ({ navigation }) => {
               }}
             >
               <Image
-                defaultSource={RandomPictures.getPicture()}
-                source={item.image}
+                source={item.image ? { uri: item.image } : { uri:RandomPictures.getPicture() }}
                 style={styles.image}
               />
               <View style={styles.subCard}>
